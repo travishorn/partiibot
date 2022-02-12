@@ -1,10 +1,7 @@
-const axios = require("axios").default;
+const sendMessage = require("../../sendMessage");
 
 exports.handler = async (event) => {
-  await axios.post(`https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage`, {
-    chat_id: JSON.parse(event.body).message.chat.id,
-    text: "I got your message!",
-  });
-
+  const { message } = JSON.parse(event.body);
+  await sendMessage(message.chat.id, "I got your message!");
   return { statusCode: 200 };
 };
