@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/travishorn/partiibot/issues"
   },
-  "homepage": "https://github.com/travishorn/partiibot#readme"
+  "homepage": "https://github.com/travishorn/partiibot#readme",
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
 }
