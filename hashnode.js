@@ -11,7 +11,6 @@ const featuredPosts = `
       author {
         username
       }
-      slug
       title
     }
   }
