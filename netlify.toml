@@ -1,0 +1,2 @@
+[template.environment]
+  BOT_TOKEN = "Change me to your Telegram bot token"
